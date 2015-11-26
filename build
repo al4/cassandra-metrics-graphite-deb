@@ -1,0 +1,14 @@
+#!/bin/bash
+
+VERSION="2.2.0"
+DEB_SUFFIX="gumtree0"
+PKG_DIR="cassandra-metrics-graphite_${VERSION}-${DEB_SUFFIX}"
+
+mkdir -p ${PKG_DIR}/usr/share/cassandra/lib
+[ ! -d ${PKG_DIR}/usr/share/cassandra/lib ] && (
+  mkdir -p ${PKG_DIR}/usr/share/cassandra/lib
+  cd ${PKG_DIR}/usr/share/cassandra/lib
+  wget -P ${PKG_DIR} http://search.maven.org/remotecontent?filepath=com/yammer/metrics/metrics-graphite/${VERSION}/metrics-graphite-${VERSION}.jar
+)
+
+dpkg-deb --build cassandra-metrics-graphite_${VERSION}-${DEB_SUFFIX}
