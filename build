@@ -11,4 +11,4 @@ mkdir -p ${PKG_DIR}/usr/share/cassandra/lib
   wget -P ${PKG_DIR} http://search.maven.org/remotecontent?filepath=com/yammer/metrics/metrics-graphite/${VERSION}/metrics-graphite-${VERSION}.jar
 )
 
-dpkg-deb --build cassandra-metrics-graphite_${VERSION}-${DEB_SUFFIX}
+dpkg-deb --build ${PKG_DIR}
