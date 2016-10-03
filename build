@@ -2,7 +2,7 @@
 
 VERSION="3.1.2"
 DEB_SUFFIX="gumtree3"
-PKG_DIR="cassandra-metrics-graphite_${VERSION}-${DEB_SUFFIX}"
+PKG_DIR="cassandra-metrics-graphite_${VERSION}-${DEB_SUFFIX}_all"
 
 mkdir -p ${PKG_DIR}/usr/share/cassandra/lib
 [ ! -d ${PKG_DIR}/usr/share/cassandra/lib ] && (
