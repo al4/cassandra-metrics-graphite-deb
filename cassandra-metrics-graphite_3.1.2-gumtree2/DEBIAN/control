@@ -1,6 +1,6 @@
 Package: cassandra-metrics-graphite
 Architecture: all
-Maintainer: Alex Forbes (alforbes@ebay.com)
+Maintainer: Alex Forbes <alforbes@ebay.com>
 Depends: debconf (>= 0.5.00), cassandra (>= 2.2.3)
 Priority: optional
 Version: 3.1.2-gumtree1
