@@ -3,7 +3,7 @@ Architecture: all
 Maintainer: Alex Forbes <alforbes@ebay.com>
 Depends: debconf (>= 0.5.00), cassandra (>= 2.2.3)
 Priority: optional
-Version: 3.1.2-gumtree1
+Version: 3.1.2-gumtree2
 Description: Installs metrics-graphite.jar in casandra's classpath
  .
 
